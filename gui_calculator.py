@@ -11,8 +11,17 @@
 import tkinter as tk
 
 
+def on_button_click():
+    print("Button Clicked")
+
 root = tk.Tk()
 root.title("Calculator")
+
+my_button = tk.Button(root, text="click me", command=on_button_click)
+my_button.pack()
+
+
+
 root.configure(background="grey")
 root.geometry("400x300")
 root.mainloop()
